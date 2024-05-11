@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz día</title>
+    <link rel="shortcut icon" href="heartfolder_99362.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="titlemiquel"><b>De parte de</b> Miquel ❤️</h2>
+    <div class="body">
+        <div class="container">
+            <div class="valentines">
+                <div class="envelope"></div>
+                <div class="front"></div>
+                <div class="card">
+                    <div class="text">
+                        <span class="a0"></span></br>
+                        <span class="a1"></span> </br>
+                        <span class="a2"></span>
+                    </div>
+                    <div class="heart" </div>
+                    </div>
+                    <div class="hearts">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                        <div class="four"></div>
+                        <div class="five"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+
+
+    <script>
+        // Get the elements
+        const containers = document.querySelectorAll('.container');
+        const cards = document.querySelectorAll('.card');
+
+        // Add event listeners
+        containers.forEach(container => {
+            container.addEventListener('mouseenter', () => {
+                cards.forEach(card => {
+                    card.style.top = '-90px';
+                    card.classList.add('animate');
+                });
+            });
+
+            container.addEventListener('mouseleave', () => {
+                cards.forEach(card => {
+                    card.style.top = '0px';
+                    card.classList.remove('animate');
+                });
+            });
+        });
+
+        // Add CSS transition for smooth animation
+        // (assuming you have a CSS file or a `<style>` block)
+    </script>
+    <script src="resquest.js"></script>
+</body>
+
+</html>
